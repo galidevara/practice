@@ -1,0 +1,25 @@
+1. B
+2. D
+3. B
+4. A
+5. A
+6. A
+7. B
+8. A
+9. A,B,D
+10. B,D
+11. Deep learning is a machine learning technique with networks capable of learning unsupervised and unstructured data. Deep 	learning has aided image classification, language translation, speech recognition. It can be used to solve any pattern 	recognition problem and without human intervention. Models are trained by using a large set of labeled data and neural 	network architectures that contain many layers. Nodes within individual layers are connected to adjacent layers. The 	network is said to be deeper based on the number of layers it has. Signals travel between nodes and assign corresponding 	weights. A heavier weighted node will exert more effect on the next layer of nodes. The final layer compiles the weighted 	inputs to produce an output. It requires large amounts of data to return accurate results.
+12. Reinforcement Learning is a type of machine learning technique that enables an agent to learn in an interactive environment 		by trial and error using feedback from its own actions and experiences. Though both supervised and reinforcement learning 	use mapping between input and output, unlike supervised learning where feedback provided to the agent is correct set of 	actions for performing a task, reinforcement learning uses rewards and punishment as signals for positive and negative 	behavior. While the goal in unsupervised learning is to find similarities and differences between data points, in 	reinforcement learning the goal is to find a suitable action model that would maximize the total cumulative reward of the 	agent.
+
+13. Machine Learning: Machine Learning is a subset of artificial intelligence involved with the creation of algorithms which can 	modify itself without human intervention to produce desired output by feeding itself through structured data.Machine 	learning programs can run on lower-end machines without as much computing power.Algorithms used in machine learning tend 	to parse data in parts, then those parts are combined to come up with a result or solution.
+
+    Deep Learning: Deep Learning is a subset of machine learning where algorithms are created and function similar to those in 	machine learning, but there are numerous layers of these algorithms each providing a different interpretation to the data 	it feeds on. It does not require human intervention. Deep learning systems require much more powerful hardware than 	simpler machine learning systems. Deep learning systems look at an entire problem or scenario in one fell swoop.
+
+14. A Perceptron is an algorithm for supervised learning of binary classifiers. This algorithm enables neurons to learn and 	processes elements in the training set one at a time. It accepts inputs, moderates them with certain weight values, then 	applies the transformation function to output the final result. There are two types of Perceptrons: Single layer and 	Multilayer.
+	Single layer Perceptrons can learn only linearly separable patterns.
+	Multilayer Perceptrons or feedforward neural networks with two or more layers have the greater processing power.
+	The Perceptron algorithm learns the weights for the input signals in order to draw a linear decision boundary.
+	This enables you to distinguish between the two linearly separable classes +1 and -1.The Perceptron receives multiple 	input signals, and if the sum of the input signals exceeds a certain threshold, it either outputs a signal or does not 	return an output. 
+15. Artificial Intelligence: It is used to develop a system to mimic human to respond behave in a circumstances. It does not 	require to be pre-programmed, instead of that, they use such algorithms which can work with their own intelligence. It 	includes learning, reasoning, and self-correction. The goal is to simulate natural intelligence to solve complex problem. 	The aim of AI is to increase chance of success and not accuracy.
+
+    Machine Learning: It enables a computer system to make predictions or take some decisions using historical data without being 	explicitly programmed.It includes learning and self-correction when introduced with new data. The goal of ML is to learn 	from data on certain task to maximize the performance of machine on this task. It aim's to increase accuracy, but it does 	not care about success.
