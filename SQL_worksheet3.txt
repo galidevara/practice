@@ -1,0 +1,31 @@
+1. create table customers (customernumber int NOT NULL,customername varchar(30),contactlastname varchar(20),contactfirstname varchar(20),phone int,addressline1 varchar(30),addressline2 varchar(30),city varchar(20),state varchar(20),postalcode int,country varchar(20),salesrepnum int,creditlimit int,PRIMARY KEY(customernumber),FOREIGN KEY(salesrepnum) REFERENCES employees(employeenumber));
+
+2. create table orders (ordernumber int NOT NULL,ordr_date date,required_date date,shipped_date date,
+status varchar(10),comments varchar(30),customernumber int, PRIMARY KEY(ordernumber),
+FOREIGN KEY(customernumber) REFERENCES customers(customernumber));
+
+3. select * from orders;
+
+4. select comments from orders;
+
+5. select ordr_date,sum(ordr_date) as total_no_of_ords from orders group by ordr_date;
+
+6. select employeenumber,lastname,firstname from employees;
+
+7.  select orders.ordernumber,customers.customername from orders inner join customers on customers.customernumber=orders.customernumber;
+
+8. select customers.customername ,employees.lastname ,employees.firstname from customers inner join employees on customers.salesrepnum=employees.employeenumber;
+
+9.  select paymentdate,sum(amount) as total_amount from payments group by paymentdate;
+
+10. select productname,productdescription,msrp from products;
+
+11. select p.productname,p.productdescription,o.quantityordered from products p,orderdetails o where p.productcode=o.productcode and o.quantityordered=(select max(quantityordered) from orderdetails where p.productcode=o.productcode);
+
+12. select customers.city from customers where customers.customernumber=orders.customernumber and orders.ordernumbr=(select max(ordernumber) from orders where customers.customernumber=orders.customernumber);
+
+13. select state,count(DISTINCT customernumber) as count from customers group by state;
+
+14. select employeenumber,concat(lastname,' ',firstname) from employees;
+
+15. select c.customername,o.ordernumber,orderdetails.quantityordered*orderdetails.priceeach as amount from customers c,orders o,orderdetails;
