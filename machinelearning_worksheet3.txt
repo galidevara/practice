@@ -1,0 +1,43 @@
+1. The linear, polynomial and RBF kernels are simply different in case of making the hyperplane decision boundary between the classes. The kernel functions are used to map the original dataset into a higher dimensional space with view to making it linear dataset.  Usually linear and polynomial kernels are less time consuming and provides less accuracy than the rbf or Gaussian kernels.
+
+2. R-square is a better measure of goodness of fit of model in regression. As R-square is a statistic measures how successful the fit is in explaining the variation of the data. A residual sum of squares (RSS) is a statistical technique used to measure the amount of variance in a data set that is not explained by a regression model.
+
+3. RSS is known as unexplained variation and is the portion of total variation that measures errors between the actual values of Y and those estimated by the regression equation.The smaller the value of RSS relative to ESS
+Residual Sum of Squares = Σ e2
+
+The sum of RSS and ESS equals TSS.
+Total SS = Σ(Yi – mean of Y)2.
+
+ESS is the explained variation, the ESS is the portion of total variation that measures how well the regression equation explains the relationship between X and Y.
+ESS = Σ(Y-Hat – mean of Y)2.
+
+4. The Gini impurity measure is one of the methods used in decision tree algorithms to decide the optimal split from a root node, and subsequent splits. It tells us what is the probability of misclassifying an observation. Lower the Gini the better the split. The degree of Gini index varies between 0 and 1, where 0 denotes that all elements belong to a certain class or if there exists only one class, and 1 denotes that the elements are randomly distributed across various classes. A Gini Index of 0.5 denotes equally distributed elements into some classes.
+
+5. Overfitting is a phenomenon where a machine learning model models the training data too well but fails to perform well on the testing data. Non-linear models may suffer from overfitting, sikes until the final model predicts accurate results. When a weak-classifier misclassifies a training sample, the algorithm then uses these very samples to improve the performance of the ensemble.
+
+6. Ensemble methods are techniques that create multiple models and then combine them to produce improved results. Ensemble methods usually produces more accurate solutions than a single model would in order to decrease variance (bagging), bias (boosting), or improve predictions (stacking).
+
+7. Bagging : Bagging is also known as bootstrap aggregating sits on top of the majority voting principle. The samples are bootstrapped each time when the model is trained. When the samples are chosen, they are used to train and validate the predictions. The samples are then replaced back into the training set. The samples are selected at random. This technique is known as bagging. To sum up, base classifiers such as decision trees are fitted on random subsets of the original training set. Subsequently, the individual predictions are aggregated. The final results are then used as predictions. It reduces the variance of a black box estimator. Due to this the chances of overfitting is ruled out.
+Boosting: The concept of Adaptive Boost revolves around correcting previous classifier mistakes. Each classifier gets trained on the sample set and learns to predict. The misclassification errors are then fed into the next classifier in the chain and are used to correct the mistakes until the final model predicts accurate results. When a weak-classifier misclassifies a training sample, the algorithm then uses these very samples to improve the performance of the ensemble.
+
+8. Random forests technique involves sampling of the input data with replacement (bootstrap sampling). In this sampling, about one thrird of the data is not used for training and can be used to testing.These are called the out of bag samples. Error estimated on these out of bag samples is the out of bag error.
+
+9. Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into, where each fold is used as a testing set at some point. As such, the procedure is often called k-fold cross-validation. 
+
+10.Parameters which define the model architecture are referred to as hyperparameters and thus this process of searching for the ideal model architecture is referred to as hyperparameter tuning. They define how our model is actually structured. They are important because they directly control the behaviour of the training algorithm and have a significant impact on the performance of the model is being trained. Choosing appropriate hyperparameters plays a crucial role in the success of our neural network architecture.
+
+11. When using high learning rates, it is possible to encounter a positive feedback loop in which large weights induce large gradients which then induce a large update to the weights. If these updates consistently increase the size of the weights, then rapidly moves away from the origin until numerical overflow occurs. This inadvertently increase rather than decrease the training error. When the learning rate is too small, training is not only slower, but may become permanently stuck with a high training error.
+
+12.If the algorithm is too simple ie.,hypothesis with linear then it may be on high bias and low variance condition and thus is error-prone. If algorithms fit too complex ie., hypothesis with high degree then it may be on high variance and low bias. In the latter condition, the new entries will not perform well. So, there is something between both of these conditions, known as Trade-off or Bias Variance Trade-off.
+This tradeoff in complexity is why there is a tradeoff between bias and variance. An algorithm can’t be more complex and less complex at the same time. For the graph, the perfect tradeoff will be like. The best fit will be given by hypothesis on the tradeoff point.
+
+13. Regularisation is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.
+The commonly used regularisation techniques are :
+1.L1 regularisation
+2.L2 regularisation
+3.Dropout regularisation
+
+14. Adaboost increases the accuracy by giving more weightage to the target which is misclassified by the model. At each iteration, Adaptive boosting algorithm changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+Gradient boosting calculates the gradient of the Loss Function with respect to the prediction. Gradient boosting increases the accuracy by minimizing the Loss Function (ie., error which is difference of actual and predicted value) and having this loss as target for the next iteration. It builds first weak learner and calculates the Loss Function. It then builds a second learner to predict the loss after the first step. The step continues until a certain threshold is reached.
+
+15. Logistic regression has traditionally been used to come up with a hyperplane that separates the feature space into classes. But if we suspect that the decision boundary is nonlinear we may get better results by attempting some nonlinear functional forms for the logit function. 
