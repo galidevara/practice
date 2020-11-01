@@ -1,0 +1,28 @@
+1. A
+2. A
+3. C
+4. C
+5. C
+6. B
+7. B
+8. A
+9. C
+10. Normal distribution, also known as the Gaussian distribution, is a probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve.In a normal distribution the mean is zero and the standard deviation is 1.
+
+11. There are many ways one could handle missing data. Some specific ways of handling this with imputation are :
+
+Imputation with mean : Missing data is replaced by mean of the column
+Imputation with median : Missing data is replaced by mean of the column
+Imputation with Mode: Missing data is replaced with mode of the column
+Imputation with linear regression : With real valued data, this is a common technique. The missing value is replaced by performing linear regression based on the other feature values.
+Dropping Variables: Sometimes you can drop variables if the data is missing for more than 60% observations but only if that variable is insignificant.
+
+12. An AB test is an example of statistical hypothesis testing, a process whereby a hypothesis is made about the relationship between two data sets and those data sets are then compared against each other to determine if there is a statistically significant relationship or not.
+
+13.  Mean imputation of missing data is bad practice in general.Mean imputation preserves the mean of the observed data.It leads to an underestimate of the standard deviation and distorts relationships between variables by “pulling” estimates of the correlation toward zero.
+
+14. Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data. One variable is considered to be an explanatory variable, and the other is considered to be a dependent variable.Before attempting to fit a linear model to observed data, a modeler should first determine whether or not there is a relationship between the variables of interest. 
+
+15. The two main branches of statistics are descriptive statistics and inferential statistics.
+Descriptive statistics is considered as the first part of statistical analysis which deals with collection and presentation of data. Scientifically, descriptive statistics can be defined as brief explanatory coefficients that are used by statisticians to summarize a given data set.
+Inferential statistics are techniques that enable statisticians to use the gathered information from a sample to make inferences, decisions or predictions about a given population. Inferential statistics often talks in probability terms by using descriptive statistics.
