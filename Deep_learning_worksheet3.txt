@@ -1,0 +1,24 @@
+1. B
+2. C
+3. B
+4. A
+5. A
+6. B
+7. D
+8. A
+9. A,B,C
+10.A,B
+11. Activation functions are really important for a Artificial Neural Network to learn and make sense of something really complicated and Non-linear complex functional mappings between the inputs and response variable.They introduce non-linear properties.If we do not apply a Activation function then the output signal would simply be a simple linear function.A linear function is just a polynomial of one degree. a linear equation is easy to solve but they are limited in their complexity and have less power to learn complex functional mappings from data.
+
+12. Forward propagation is where you would give a certain input to your neural network, say an image or text. The network will calculate the output by propagating the input signal through its layers. In other words, the output form one layer becomes the input to the next one, where the output from the last one is the answer.
+BackPropagation: Basically, during training all the parameters of the networks layers need to be updated. For this reason, the network needs to know in what direction the update should go thus it needs to calculate the gradient with respect to a function known as the loss function, where every layer adds its own contribution to that gradient, starting from the last one.
+
+13. Stochastic Gradient Descent: It is a variation of the gradient descent that calculates the error and updates the model for each record in the training datasets.It keep on sending record one by one until it is not able to converge itself to the minima points.
+Batch Gradient descent: It  is a variation of the gradient descent algorithm that calculates the error for each record in the training datasets, but only updates the model after all training records have been evaluated.
+Mini Batch Gradient descent: It is a variation of the gradient descent algorithm that splits the training datasets into small batches that are used to calculate model error and update model coefficients.
+
+14. The model update frequency is higher than BGD. In MGD, we are not waiting for entire data, we are just passing records, then we are passing for optimization.
+The batching allows both efficiency of not having all training data in memory and algorithms implementations. We are controlling memory consumption as well to store losses for each and every datasets.
+The batches updates provide a computationally more efficient process than SGD.
+
+15. Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.In transfer learning, we first train a base network on a base dataset and task, and then we repurpose the learned features, or transfer them, to a second target network to be trained on a target dataset and task. This process will tend to work if the features are general, meaning suitable to both base and target tasks, instead of specific to the base task.
