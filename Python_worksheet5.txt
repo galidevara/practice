@@ -1,0 +1,13 @@
+1.C
+2.A
+3.B
+4.D
+5.C
+6.D
+7.D
+8. C
+9.C
+10.A,B
+11.List can be 2D whereas a set can't.
+As list are ordered they are comparatively slow to execute whereas sets are fast.
+Set uses hash function to find an element whereas list is an array. Hence finding element in Set is faster than in list.
