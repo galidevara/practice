@@ -1,0 +1,27 @@
+1.  select * from movie
+
+2. select title ,max(runtime) from movie;
+
+3. select title ,max(revenue) from movie;
+
+4. select title from (select title, max(revenue) from movie union select max(budget),title from movie) as best_title;
+
+5. select title,cast_order,char_name,gender,per_name from movie inner join movie_cast on movie.movie_id=movie_cast.movie_id and movie_cast.person_id=person.person_id;
+
+6. select country_name,max(count(country_name)), sum(count(country_name)) from country group by country_name;
+
+7. select gener_id,gener_name from gener;
+
+8. select language_name,sum(movie_id) no_of_books from language group by language_name; 
+
+10. select title,popularity from movie order by popularity desc limit 10;
+
+11. select title from movie order by revenue desc kimit 1 offset 2;
+
+12.select title from movie where movie_status='rumoured';
+
+13. select title,country_name from movie m,country c,production_country pc where m.movie_id=pc.movie_id and pc.country_id=c.country and c.country_name='united states of america';
+
+14. select movie_id, cmpny_name from movie_compnay mc inner join production_company pc on mc.cmpnay_id=pc.cmpnay_id;
+
+15. select title from movie order by budget desc limit 20;
