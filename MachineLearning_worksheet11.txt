@@ -1,0 +1,30 @@
+1. A
+2. C
+3. A
+4. C
+5. A
+6. A
+7. B
+8. C
+9. A,B,D
+10. A,B
+11. A,B,C
+12. R-squared gives the degree of variability in the target variable that is explained by the model or the independent variables. If this value is 0.7, then it means that the independent variables explain 70% of the variation in the target variable.R-squared value always lies between 0 and 1. A higher R-squared value indicates a higher amount of variability being explained by our model and vice-versa.
+The Adjusted R-squared takes into account the number of independent variables used for predicting the target variable. In doing so, we can determine whether adding new variables to the model actually increases the model fit.So, if R-squared does not increase significantly on the addition of a new independent variable, then the value of Adjusted R-squared will actually decrease.
+
+13. a cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a difference or distance between the predicted value and the actual value.
+
+14. The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. 
+The second term is the sum of squares due to regression, or SSR. It is the sum of the differences between the predicted value and the mean of the dependent variable.
+The last term is the sum of squares error, or SSE. The error is the difference between the observed value and the predicted value.
+
+15. Evaluation metrics are a measure of how good a model performs and how well it approximates the relationship. 
+Mean Squared Error (MSE):
+The most common metric for regression tasks is MSE. It has a convex shape. It is the average of the squared difference between the predicted and actual value. Since it is differentiable and has a convex shape, it is easier to optimize.
+Mean Absolute Error (MAE):
+This is simply the average of the absolute difference between the target value and the value predicted by the model. Not preferred in cases where outliers are prominent.
+R-squared:
+This metric represents the part of the variance of the dependent variable explained by the independent variables of the model. It measures the strength of the relationship between your model and the dependent variable.
+Root Mean Squared Error (RMSE)
+This is the square root of the average of the squared difference of the predicted and actual value.
+R-squared error is better than RMSE. This is because R-squared is a relative measure while RMSE is an absolute measure of fit 
